@@ -1,0 +1,12 @@
+#ifndef _CONFIG_H_
+#define _CONFIG_H_
+
+#cmakedefine NCURSES_SUBDIRECTORY
+
+#if defined(NCURSES_SUBDIRECTORY)
+#  include <ncurses/ncurses.h>
+#else
+#  include <ncurses.h>
+#endif
+
+#endif /* !_CONFIG_H_ */
