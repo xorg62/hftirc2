@@ -20,8 +20,17 @@ set(
 	util.h
 )
 
+include_directories(
+	${CURSES_INCLUDE_DIR}
+	${hftirc_BINARY_DIR}
+)
+
 add_executable(hftirc ${SOURCES})
-target_include_directories(hftirc PRIVATE ${CURSES_INCLUDE_DIR} ${hftirc_BINARY_DIR})
-target_link_libraries(hftirc ${CURSES_LIBRARIES} ncursesw)		# TODO: remove ncursesw code
+
+# TODO: remove ncursesw code
+target_link_libraries(
+	hftirc
+	ncursesw
+)
 
 install(TARGETS hftirc DESTINATION bin)
