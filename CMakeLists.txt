@@ -9,8 +9,8 @@ if (CURSES_HAVE_NCURSES_NCURSES_H)
 endif()
 
 configure_file(
-	${hftirc_SOURCE_DIR}/cmake/config.h.in
-	${hftirc_BINARY_DIR}/config.h
+	${hftirc_SOURCE_DIR}/cmake/port.h.in
+	${hftirc_BINARY_DIR}/port.h
 )
 
 add_subdirectory(src)

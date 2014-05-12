@@ -1,5 +1,5 @@
-#ifndef _CONFIG_H_
-#define _CONFIG_H_
+#ifndef _PORT_H_
+#define _PORT_H_
 
 #cmakedefine NCURSES_SUBDIRECTORY
 
@@ -9,4 +9,4 @@
 #  include <ncurses.h>
 #endif
 
-#endif /* !_CONFIG_H_ */
+#endif /* !_PORT_H_ */

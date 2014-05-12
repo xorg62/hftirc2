@@ -21,7 +21,7 @@ set(
 )
 
 add_executable(hftirc ${SOURCES})
-target_include_directories(hftirc PRIVATE ${CURSES_INCLUDE_DIR})
+target_include_directories(hftirc PRIVATE ${CURSES_INCLUDE_DIR} ${hftirc_BINARY_DIR})
 target_link_libraries(hftirc ${CURSES_LIBRARIES} ncursesw)		# TODO: remove ncursesw code
 
 install(TARGETS hftirc DESTINATION bin)

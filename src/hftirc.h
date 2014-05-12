@@ -23,11 +23,7 @@
 #include <wchar.h>
 #include <wctype.h>
 
-#if !defined (__NetBSD__)
-    #include <ncurses.h>
-#else
-    #include <ncurses/ncurses.h>
-#endif
+#include "port.h"
 
 #define BUFSIZE      (4096)
 #define HISTOLEN     (64)
