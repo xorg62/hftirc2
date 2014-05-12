@@ -16,8 +16,8 @@ Depends need to compile the project.
 ###Install
  To insall the project:
 
-    git clone https://github.com/xorg62/hftirc.git
-    cd HFTirc
+    git clone https://github.com/xorg62/hftirc2.git
+    cd hftirc2
     cmake .
     make
     sudo make install
